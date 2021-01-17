@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 
 </head>
 
@@ -14,23 +15,23 @@
     <div id="top"></div>
     <div class="wrapper_photo">
         <div class="logo"><div>FOTOGRAFIA</div></div> 
-            <div class="home">    
-                <div id="navbar" class="navbar">
-                    <a id="home" href="index.html" class= "image"><img src="home.svg" alt="menu"><div class="tekst">HOME</div></a>
-                    <a id = "links" href="inspiration.html" class= "image" ><img src="lightbulb.svg" alt="menu"><div class="tekst">INSPIRATION</div></a>
-                    <a id="about" href="photographers.html" class= "image"><img src="community.svg" alt="menu"><div class="tekst">PHOTOGRAPHERS</div></a>
-                    <a href="contests.html" id="contact" class= "image " ><img src="trophy.svg" alt="menu"><div class="tekst">CONTESTS</div></a>
-                    <div id="contact" class= "image active todrop" ><img src="camera.svg" alt="menu">
-                        <div class="tekst">EQUIPMENT</div>
-                        <div class="drop">
-                            <a class="dropped" href="cameras.html#cameras">Cameras</a> 
-                            <a class="dropped" href="cameras.html#lenses">Lenses</a> 
-                            <a class="dropped" href="cameras.html#other">Other</a> 
-                        </div>
+        <div class="home">    
+            <div id="navbar" class="navbar">
+                <a id="home" href="index.html" class= "image "><img src="home.svg" alt="menu"><div class="tekst">HOME</div></a>
+                <a id = "inspiration" href="inspiration.html" class= "image " ><img src="lightbulb.svg" alt="menu"><div class="tekst">INSPIRATION</div></a>
+                <a id="photo" href="photographers.html" class= "image"><img src="community.svg" alt="menu"><div class="tekst">PHOTOGRAPHERS</div></a>
+                <a href="contests.html" id="contact" class= "image" ><img src="trophy.svg" alt="menu"><div class="tekst">CONTESTS</div></a>
+                <div id="cameras" onclick="dropdown()" class= "image todrop active" ><img src="camera.svg" id="dropImage" alt="menu">
+                    <div class="tekst">EQUIPMENT</div>
+                    <div class="drop" id="drop">
+                        <a class="dropped" href="cameras.html#cameras">Cameras</a> 
+                        <a class="dropped" href="cameras.html#lenses">Lenses</a> 
+                        <a class="dropped" href="cameras.html#other">Other</a> 
                     </div>
                 </div>
-                
             </div>
+            
+        </div>
             <div id="content" class="content_photography">
                 <div>
                     <div class="content_text">
