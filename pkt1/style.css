@@ -123,6 +123,7 @@
         padding-left: 0;
         padding-right: 0;
         width: 20%;
+        text-decoration: none;
     }
 
     .todrop{
@@ -141,7 +142,12 @@
     .todrop:hover .drop {
     display: block;
     }
-    
+    .drop a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
     .navbar {
         background-color: rgb(205, 209, 211);
         color: #2d4b7a;
