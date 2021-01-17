@@ -1,0 +1,262 @@
+<style>
+    #menu{
+        z-index: 10;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        min-width: 600px;
+        background-color: rgb(44, 44, 231);
+    }
+
+    #menu .element{
+        border-right: 1px solid white;
+        position: relative;
+        height: 50px;
+        width: 150px;
+        float: left;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    #menu a:hover{
+        background-color: rgb(34, 34, 124);
+    }
+
+    h1{
+        position: relative;
+        margin: auto auto;
+        width: 200px;
+        top: 80px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        color: rgb(34, 34, 124);
+        font-size: 50px;
+
+    }
+
+    #content{
+        z-index: 1;
+        position: relative;
+        width: 600px;
+        margin: auto auto;    
+    }
+
+    .post1, .post2{
+        top: 120px;
+        position: relative;
+        margin-left: 5px;
+        padding: 5px;
+        width: 590px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        color: rgb(34, 34, 124);
+        font-size: 20px;
+        border-bottom: 1px dashed black;
+        margin-bottom: 10px;
+    }
+
+    .post1{
+        display:table;
+        background-color: rgb(208, 208, 255);
+    }
+    .post2{
+        display:table;
+        background-color: rgb(255, 200, 228);
+    }
+    
+    .header{
+        font-weight: bold;
+    }
+    .aside{
+        float: left;
+        font-size: 20px;
+        display: table-cell;
+    }
+    .main{
+        display: table-cell;
+        font-size: 18px;
+    }
+    .footer{
+        display:table-row-group;
+        font-size: 14px;
+    }
+    .comments{
+        position: relative; 
+        display: block;
+        background-color: rgb(255, 200, 228);
+      
+    }
+    .comment{
+        
+        margin-left: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .caside{
+        font-size: 10px;
+    }
+    .cmain{
+        font-size: 12px;
+    }
+    .cfooter{
+        font-size: 10px;
+    }
+    .przyciski{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .przyciski img{
+        margin: 2px;
+    }
+    .przyciski a:hover img{
+        width: 100px;
+    }
+
+    @media only screen and (min-width: 768px) {
+    
+        .przyciski{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        }
+
+        #content{
+        width: 900px;
+     }
+     #menu{
+        z-index: 10;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        min-width: 1005px;
+        background-color: rgb(44, 44, 231);
+    }
+    #menu .element{
+        border-right: 1px solid white;
+        position: relative;
+        height: 50px;
+        width: 250px;
+        float: left;
+        text-align: center;
+        padding-top: 7px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .post1, .post2{
+        top: 120px;
+        position: relative;
+        margin-left: 5px;
+        padding: 5px;
+        width: 890px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        color: rgb(34, 34, 124);
+        font-size: 20px;
+        border-bottom: 1px dashed black;
+        margin-bottom: 10px;
+    }
+
+    }
+
+
+</style>
+
+
+<div id=menu>
+    <a href class=element> <div > Home </div></a>
+    <a href class=element> <div > Create an Event </div></a>
+    <a href class=element> <div > Invite Friends </div></a>
+    <a href class=element> <div > Profile </div></a>
+</div>
+
+<div id=content>
+
+    <div id=posts>
+        <h1>EVENTS</h1>
+        <div class=post1>
+            <div class=header> Event 1 </div>
+            <div class=aside> SuspectedBaracuda</div>
+            <div class=main> Only one time in the baracudas life - great, noisy, rich Event 1!!! Come with other BARACUDAS!!!
+                <div class=przyciski>
+                    <a href><img width=30 title="I love it!!!" src=ico/in-love.png></a> 
+                    <a href><img width=30 title="LOL" src=ico/laughing.png></a> 
+                    <a href><img width=30 title="WTF?" src=ico/surprised.png></a> 
+                    <a href><img width=30 title="WRRRR!!!" src=ico/censored.png></a>
+                </div>
+
+            </div>
+            <div class=footer> 01.07.2021 </div>
+        </div>
+        <div class=post2>
+            <div class=header> Event 2 </div>
+            <div class=aside> CreysiCondor</div>
+            <div class=main> Only one time in the baracudas life but secound time in the condors life - great, noisy, rich Event 2!!! Come with us to watch poor baracudas in bad dancing steps!!! 
+                <div class=przyciski>
+                    <a href><img width=30 title="I love it!!!" src=ico/in-love.png></a> 
+                    <a href><img width=30 title="LOL" src=ico/laughing.png></a> 
+                    <a href><img width=30 title="WTF?" src=ico/surprised.png></a> 
+                    <a href><img width=30 title="WRRRR!!!" src=ico/censored.png></a>
+                </div>
+            </div>
+            <div class=footer>  04.07.2021 </div>
+        </div>
+        <div class=post1>
+            <div class=header> Event 3 </div>
+            <div class=aside> PulledPuma</div>
+            <div class=main> Pssst, only for pumas. I know when condors and baracudas will be in one place. We can hunt them :D But remember - psssssst 
+                <div class=przyciski>
+                    <a href><img width=30 title="I love it!!!" src=ico/in-love.png></a> 
+                    <a href><img width=30 title="LOL" src=ico/laughing.png></a> 
+                    <a href><img width=30 title="WTF?" src=ico/surprised.png></a> 
+                    <a href><img width=30 title="WRRRR!!!" src=ico/censored.png></a>
+                </div>
+            </div>
+            <div class=footer>  05.07.2021 </div>
+        </div>
+        <div class=post2>
+            <div class=header> Event 4 </div>
+            <div class=aside> OntarioOstrich</div>
+            <div class=main> Hey, i dont know who eats all baracudas and condors but we, ostriches, invite you to a candlelight vigil. R.I.P. baracudas and condors
+                <div class=przyciski>
+                    <a href><img width=30 title="I love it!!!" src=ico/in-love.png></a> 
+                    <a href><img width=30 title="LOL" src=ico/laughing.png></a> 
+                    <a href><img width=30 title="WTF?" src=ico/surprised.png></a> 
+                    <a href><img width=30 title="WRRRR!!!" src=ico/censored.png></a>
+                </div>
+            </div>
+            <div class=footer>  07.08.2021 </div>
+        </div>
+        <div class=comments>      
+            <div class=comment>
+                <div class=caside> PulledPuma</div>
+                <div class=cmain> OK, ill be there for you <3 </div>
+                <div class=cfooter>  07.08.2021 </div>
+                    
+            </div>
+            <div class=comment>
+                <div class=caside> OntarioOstrich</div>
+                <div class=cmain> Thank you, very much. Your presence is very importatnt for me, my Friend!</div>
+                <div class=cfooter>  07.08.2021 </div>
+                    
+            </div>
+            <div class=comment>
+                <div class=caside> CreysiCondor</div>
+                <div class=cmain> --- POST DELETED BY ADMIN: RealPuma --- </div>
+                <div class=cfooter>  07.08.2021 </div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+</div>
