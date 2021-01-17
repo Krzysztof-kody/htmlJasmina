@@ -11,7 +11,8 @@
 
 
 .image img{
-    display: none;
+    display: block;
+    width:20vw;
 }
 .image{
     display: flex;
@@ -33,6 +34,9 @@
     font-size: 3vh;
 }
 
+.image .tekst{
+    display: none;
+}
 .navbar a {
     color: #2d4b7a;
 }
@@ -48,12 +52,12 @@
     width: 100%;
 }
 .content_photography{
-    display: flex;
+    display: block;
 }
 .content_text{
     background-color: rgba(0, 0, 0, 0);
     color: #1c3358;
-    width: 40%;
+    width: 80%;
     margin-top: 15vh;
     margin-left: 30px;
     position: relative;
@@ -85,4 +89,103 @@
     font-size: 20px;
     color: #2d4b7a;
 
+}
+
+@media only screen and (min-width: 768px) {
+
+    .logo{
+        color: #2d4b7a;
+        height: 12vh;
+        padding-top:3.5vh;
+        margin-top: 10px;
+        align-self: center;
+        text-align: center;
+        align-content: center;
+        font-size: 5vh;
+    }
+    
+    
+    .image img{
+        display: none; 
+        
+        width: 20%;
+    }
+    .image{
+        display: flex;
+        padding: 20px;
+        align-content: center;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        width: 20%;
+    }
+    
+    .navbar {
+        background-color: rgb(205, 209, 211);
+        color: #2d4b7a;
+        width: 100%;
+        height: 10vh;
+        margin-top: 10px;
+        position: relative;
+        font-size: 3vh;
+    }
+
+    .image .tekst{
+        display: flex;
+        width: 20%;
+    }
+    
+    .navbar a {
+        color: #2d4b7a;
+    }
+    
+    .image.active{
+        color: RGB(0,0,0);
+    }
+    
+    .navbar {
+        display: flex;
+        transition: 0.3s;
+        z-index: 4;
+        width: 100%;
+    }
+    .content_photography{
+        display: flex;
+    }
+    .content_text{
+        background-color: rgba(0, 0, 0, 0);
+        color: #1c3358;
+        width: 40%;
+        margin-top: 15vh;
+        margin-left: 30px;
+        position: relative;
+        font-size: 3vh;
+    }
+    
+    .links{
+        margin: 6vh;
+    
+    }
+    
+    .content_photography a {
+        color: black;
+    
+    }
+    .content_photography ul {
+        width:40%;
+        margin-left: 15vw;
+        list-style-type: none;
+        line-height: 1.5;
+    }
+    .content_photography ul li::first-letter {
+        color: #2d4b7a;
+    }   
+    
+    .category{
+        margin-left: 15vw;
+        margin-top: 10vh;
+        font-size: 20px;
+        color: #2d4b7a;
+    
+    }
 }
