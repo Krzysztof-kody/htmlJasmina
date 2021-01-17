@@ -9,6 +9,11 @@
     font-size: 5vh;
 }
 
+.footer{
+
+    position: fixed;
+    bottom:0;
+}
 
 .image img{
     display: block;
@@ -119,6 +124,23 @@
         padding-right: 0;
         width: 20%;
     }
+
+    .todrop{
+        position: relative;
+        display: inline-block;
+      }
+    .drop {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+    .todrop:hover .drop {
+    display: block;
+    }
     
     .navbar {
         background-color: rgb(205, 209, 211);
@@ -155,7 +177,7 @@
     .content_text{
         background-color: rgba(0, 0, 0, 0);
         color: #1c3358;
-        width: 40%;
+        width: 40vw;
         margin-top: 15vh;
         margin-left: 30px;
         position: relative;
@@ -163,7 +185,7 @@
     }
     
     .links{
-        margin: 6vh;
+        margin: 1vh;
     
     }
     
@@ -173,16 +195,18 @@
     }
     .content_photography ul {
         width:40%;
-        margin-left: 15vw;
         list-style-type: none;
         line-height: 1.5;
+        margin: 1vw;
+        margin-left: 20vw;
+        
     }
     .content_photography ul li::first-letter {
         color: #2d4b7a;
     }   
     
     .category{
-        margin-left: 15vw;
+        margin-left: 20vw;
         margin-top: 10vh;
         font-size: 20px;
         color: #2d4b7a;
