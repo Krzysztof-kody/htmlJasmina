@@ -10,6 +10,17 @@
 }
 
 
+.title{
+    color: #2d4b7a;
+    font-size: 3vh;
+    margin: 1vw;
+}
+.article{
+    color:black;
+    margin: 5vw;
+    width:80vw;
+}
+
 .todrop{
     position: relative;
     display: inline-block;
@@ -67,6 +78,8 @@
 
     position: fixed;
     bottom:0;
+    background-color: white;
+    width: 100%;
 }
 
 .image img{
