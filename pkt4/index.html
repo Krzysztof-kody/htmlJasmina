@@ -1,0 +1,107 @@
+<style>
+
+.post{
+    display: block;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.header{
+    display: block;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 2px;
+    margin: 1px;
+}
+.autor{
+    display: block;
+    padding: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+#profil{
+    position: fixed;
+    top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+    visibility: hidden;
+    font-size: 30px;
+    background-color: white;
+    border: 1px double black;
+    padding: 10px;
+    text-align: center;
+}
+
+.tresc{
+    margin: 10px;   
+}
+
+</style>
+<a onclick=hide()>
+<div id=profil>
+
+</div>
+</a>
+<div id=txt>
+
+</div>
+
+<script>
+
+var posts = [
+    {
+    id: "1",
+    tytuł: "treść nagłówka posta 1",
+    treść: "główna treść posta",
+    autor: "nazwa profilu autora",
+    email: "e-mail autora", //jeśli używamy
+    profil: "id_profilu_autora", //jeśli używamy
+    },
+    {
+    id: "2",
+    tytuł: "treść nagłówka posta 2",
+    treść: "główna treść posta",
+    autor: "nazwa profilu autora",
+    email: "e-mail autora", //jeśli używamy
+    profil: "id_profilu_autora", //jeśli używamy
+    },
+    {
+    id: "3",
+    tytuł: "treść nagłówka posta 3",
+    treść: "główna treść posta",
+    autor: "nazwa profilu autora",
+    email: "e-mail autora", //jeśli używamy
+    profil: "id_profilu_autora", //jeśli używamy
+    }
+
+];
+
+function komentuj(id){
+    document.getElementById("comment" + id).innerHTML = "<form><input type=hidden name=id value="+id+"><textarea cols= 40 name=tekst placeholder='Wpisz treść komentarza'></textarea><br><input type=submit value=Wyślij></form>";
+}
+
+function profil(login){
+    document.getElementById("profil").innerHTML = login;
+    document.getElementById("profil").style.visibility = "visible";
+}
+
+function hide(){
+    document.getElementById("profil").style.visibility = "hidden";
+}
+
+posts.forEach(element => {
+    
+    document.getElementById("txt").innerHTML += 
+    "<section class=post id=" + element.id + 
+    "><div class=header>" + element.tytuł + 
+    "</div><div class=autor onclick='profil(\"" + element.autor + "\")''>" + element.autor +
+     "</div><div class=tresc>" + element.treść + "</div><button onclick=komentuj(" +element.id + ")>Komentuj</button><div id=comment" + element.id +"></div></div>";
+    
+    
+
+});
+
+</script>
